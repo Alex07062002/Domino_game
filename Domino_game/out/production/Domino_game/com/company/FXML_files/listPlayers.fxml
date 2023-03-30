@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="listPlayers" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.FXML_files.ListPlayers">
+   <HBox layoutX="21.0" layoutY="87.0" prefHeight="21.0" prefWidth="579.0" spacing="100.0">
+      <children>
+         <CheckBox fx:id="Player1Real" mnemonicParsing="false" onAction="#updateType" text="Игрок" visible="false"/>
+         <CheckBox fx:id="Player1Computer" mnemonicParsing="false" onAction="#updateType2" text="Компьютер"
+                   visible="false"/>
+      </children>
+   </HBox>
+   <HBox layoutX="8.0" layoutY="108.0" prefHeight="39.0" prefWidth="579.0" spacing="10.0">
+      <children>
+         <Label fx:id="name1" onDragDetected="#updateType" text="Имя 1 игрока" visible="false"/>
+         <TextField fx:id="namePlayer1" onAction="#updateType" prefHeight="31.0" prefWidth="253.0" visible="false"/>
+      </children>
+   </HBox>
+   <HBox layoutY="201.0" prefHeight="39.0" prefWidth="579.0" spacing="10.0">
+      <children>
+         <Label fx:id="name2" text="Имя игрока 2" visible="false"/>
+         <TextField fx:id="namePlayer2" prefHeight="31.0" prefWidth="253.0" visible="false"/>
+      </children>
+   </HBox>
+   <Label fx:id="first" alignment="CENTER" layoutX="303.0" layoutY="54.0" prefHeight="27.0" prefWidth="66.0"
+          text="Игрок 1" textFill="gold" visible="false">
+   <font>
+      <Font size="18.0"/>
+   </font>
+   </Label>
+   <Label fx:id="second" alignment="CENTER" layoutX="303.0" layoutY="147.0" text="Игрок 2" textFill="gold"
+          visible="false">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Label fx:id="third" alignment="CENTER" layoutX="303.0" layoutY="240.0" text="Игрок 3" textFill="gold"
+          visible="false">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <HBox layoutX="8.0" layoutY="302.0" prefHeight="39.0" prefWidth="579.0" spacing="10.0">
+      <children>
+         <Label fx:id="name3" text="Имя игрока 3" visible="false"/>
+         <TextField fx:id="namePlayer3" prefHeight="31.0" prefWidth="253.0" visible="false"/>
+      </children>
+   </HBox>
+   <Label fx:id="fourth" alignment="CENTER" layoutX="303.0" layoutY="341.0" text="Игрок 4" textFill="gold"
+          visible="false">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <HBox layoutX="21.0" layoutY="180.0" prefHeight="21.0" prefWidth="579.0" spacing="100.0">
+      <children>
+         <CheckBox fx:id="Player2Real" mnemonicParsing="false" onAction="#updateType3" text="Игрок" visible="false"/>
+         <CheckBox fx:id="Player2Computer" mnemonicParsing="false" onAction="#updateType4" text="Компьютер"
+                   visible="false"/>
+      </children>
+   </HBox>
+   <HBox layoutX="21.0" layoutY="267.0" prefHeight="21.0" prefWidth="579.0" spacing="100.0">
+      <children>
+         <CheckBox fx:id="Player3Real" mnemonicParsing="false" onAction="#updateType5" text="Игрок" visible="false"/>
+         <CheckBox fx:id="Player3Computer" mnemonicParsing="false" onAction="#updateType6" text="Компьютер"
+                   visible="false"/>
+      </children>
+   </HBox>
+   <HBox layoutX="21.0" layoutY="368.0" prefHeight="21.0" prefWidth="579.0" spacing="100.0">
+      <children>
+         <CheckBox fx:id="Player4Real" mnemonicParsing="false" onAction="#updateType7" text="Игрок" visible="false"/>
+         <CheckBox fx:id="Player4Computer" mnemonicParsing="false" onAction="#updateType8" text="Компьютер"
+                   visible="false"/>
+      </children>
+   </HBox>
+   <HBox layoutY="399.0" prefHeight="39.0" prefWidth="579.0" spacing="10.0">
+      <children>
+         <Label fx:id="name4" text="Имя игрока 4" visible="false"/>
+         <TextField fx:id="namePlayer4" prefHeight="31.0" prefWidth="253.0" visible="false"/>
+      </children>
+   </HBox>
+   <Button fx:id="startGame" layoutX="363.0" layoutY="438.0" mnemonicParsing="false" onAction="#setStartGameAction"
+           text="Начать игру!!!"/>
+   <Button fx:id="returnButton" layoutX="205.0" layoutY="438.0" mnemonicParsing="false" onAction="#setReturnToMenu"
+           text="Возврат в меню"/>
+   <HBox layoutY="4.0" prefHeight="39.0" prefWidth="640.0" spacing="10.0">
+      <children>
+         <Label text="Введите число игроков"/>
+         <TextField fx:id="numberOfPlayers" onAction="#Players"/>
+      </children>
+   </HBox>
+</AnchorPane>

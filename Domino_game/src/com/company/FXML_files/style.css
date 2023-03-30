@@ -1,0 +1,40 @@
+#pane{
+    -fx-background-image: url("foto/domino-start-panel.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 720 480;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+#listPlayers{
+    -fx-background-image: url("foto/game-969104_640.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 640 480;
+    -fx-background-position: center center;
+}
+
+#Anchor{
+    -fx-background-image: url("foto/maxresdefault_live.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1200 640;
+    -fx-background-position: center center;
+}
+
+#Board{
+    -fx-background-image: url("foto/Board_background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1200 450;
+    -fx-background-position: center center;
+}
+#dominoPlayer{
+    -fx-background-image: url("foto/scrabble-game-words-61062451.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 650 110;
+    -fx-background-position: bottom center;
+}
+
+
+.label {
+-fx-font-family:"Forte";
+}
+
